@@ -1,0 +1,5 @@
+print("Hello World!")
+print("Hello World!")
+print("Hello World!")
+print("You can also use \\n to print on a new line")
+print("Hello World!\nHello World!\nHello World!")
