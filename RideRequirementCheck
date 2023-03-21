@@ -1,0 +1,22 @@
+#udemy 100 day python class 
+# 34 multiple nested if's class
+
+print("Welcome to the ride, please help us with the following information.")
+height_user_input = int(input("What is your height?"))
+ticket_price = 0 
+if(height_user_input > 120):
+  age = int(input("Enter the age"))
+  if(age < 12):
+    ticket_price += 5
+  elif(12<= age < 18):
+    ticket_price += 7
+  else:
+    ticket_price += 12
+else: 
+  print("Sorry, you can't ride due to the height restrictions")
+
+if(ticket_price > 0):
+  photos = input("Would you like to click a picture? /n Press 'Y' for YES and 'N' for NO ")
+  if(photos == 'Y'):
+   ticket_price += 3
+  print(f"Total amount payable for the ride is: {ticket_price}")
